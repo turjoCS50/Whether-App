@@ -70,7 +70,7 @@ class WeatherApp(QWidget):
         self.get_whether_button.clicked.connect(self.get_whether)
 
     def get_whether(self):
-        api_key = "6a2b7c26e6a91677f1de8dceea50f511"
+        api_key = "Your_own_api_key"
         city = self.city_input.text()
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
 
